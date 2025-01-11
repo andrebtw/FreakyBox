@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "compare": "c",
+        "cstdint": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

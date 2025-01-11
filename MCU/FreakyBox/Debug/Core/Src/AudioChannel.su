@@ -1,0 +1,3 @@
+../Core/Src/AudioChannel.cpp:4:1:AudioChannel::AudioChannel()	16	static
+../Core/Src/AudioChannel.cpp:8:1:AudioChannel::AudioChannel(float)	16	static
+../Core/Src/AudioChannel.cpp:13:1:AudioChannel::~AudioChannel()	16	static

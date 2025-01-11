@@ -1,0 +1,4 @@
+/.metadata
+/MCU/.metadata
+*.log
+MCU/.metadata/.plugins/org.eclipse.cdt.core/.log

@@ -127,21 +127,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+    mcuMain();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if (callback_return == DMA_STARTED || callback_return == DMA_HALF_COMPLETED)
-	  {
-	  	audio_buffer_ptr = &audio_buffer[0];
-	  	callback_return = DMA_FILLING_BUFFER;
-	  }
-	  else if (callback_return == DMA_COMPLETED)
-	  {
-	  	audio_buffer_ptr = &audio_buffer[BUFFER_SIZE/2];
-	  	callback_return = DMA_FILLING_BUFFER;
-	  }
-  }
+
   /* USER CODE END 3 */
 }
 

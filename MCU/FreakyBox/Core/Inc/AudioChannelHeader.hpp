@@ -6,16 +6,16 @@
 class AudioChannel
 {
     private:
-        float   _volume;
+        float               _volume;
+        const std::string   _name;
     public:
         AudioChannel();
         AudioChannel(float volume);
-        ~AudioChannel();
+        ~AudioChannel(float volume, const std::string &name);
 
         void    setVolume(float volume);
         float   getVolume(void);
 };
-
 
 
 #endif

@@ -1,17 +1,21 @@
 {
-    "configurations": [
-        {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "A:\\ST\\STM32CubeCLT_1.17.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe"
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/MCU/FreakyBox/Core/Inc/**",
+        "A:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/arm-none-eabi/include"
+      ],
+      "defines": [
+        "STM32F407xx", // Example, adjust to your STM32 model
+        "USE_HAL_DRIVER"
+      ],
+      "compilerPath": "A:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "linux-gcc-arm"
+    }
+  ],
+  "version": 4
 }

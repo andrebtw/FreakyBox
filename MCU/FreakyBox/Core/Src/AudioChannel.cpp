@@ -1,5 +1,6 @@
 #include "cppMainHeader.hpp"
 #include "AudioChannelHeader.hpp"
+#include <string>
 
 AudioChannel::AudioChannel() : _volume(1.0)
 {

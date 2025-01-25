@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug STM32",
+        "type": "cortex-debug",
+        "request": "launch",
+        "servertype": "stlink",
+        "cwd": "${workspaceFolder}",
+        "executable": "${workspaceFolder}/MCU/FreakyBox/Debug/FreakyBox.elf",
+        "device": "STM32F407VETX", // Replace with your device
+        "interface": "swd",
+        "runToEntryPoint": "true"
+      }
+    ]
+  }

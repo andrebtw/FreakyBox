@@ -1,5 +1,6 @@
 #include "cppMainHeader.hpp"
 #include "MyMCUHeader.hpp"
+extern
 
 
 MyMCU::MyMCU(uint16_t bpm) : _bpm(bpm)

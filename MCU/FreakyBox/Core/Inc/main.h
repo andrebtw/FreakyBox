@@ -29,7 +29,6 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -47,7 +46,13 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+typedef enum CallBacks
+{
+	DMA_STARTED,
+	DMA_HALF_COMPLETED,
+	DMA_COMPLETED,
+	DMA_FILLING_BUFFER,
+} CallBacksEnum;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
@@ -69,7 +74,12 @@ void mcuMain(void);
 #define LED4_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
+extern CallBacksEnum callback_return;
+extern int16_t audio_buffer[128];
+extern int16_t *audio_buffer_ptr;
 
+#define BUFFER_SIZE 128
+#define SAMPLE_RATE 48000
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

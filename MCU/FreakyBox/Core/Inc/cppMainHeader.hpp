@@ -5,6 +5,8 @@
 #include "OscillatorHeader.hpp"
 #include <vector>
 #include <cstdint>
+#include <string>
+#include "main.h"
 
 #ifdef __cplusplus
 extern "C" {

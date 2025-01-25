@@ -1,3 +1,0 @@
-../Core/Src/AudioChannel.cpp:4:1:AudioChannel::AudioChannel()	1
-../Core/Src/AudioChannel.cpp:8:1:AudioChannel::AudioChannel(float)	1
-../Core/Src/AudioChannel.cpp:13:1:AudioChannel::~AudioChannel()	1
